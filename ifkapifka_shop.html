@@ -1,0 +1,201 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="ifka.pifka web shop">
+        <meta name="author" content="Vlatka Korbar">
+        <title>ifka.pifka - shop</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="icon" type="image/x-icon" href="images/logo-zelena.png">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+        <link href="bootstrap/bootstrap-reboot.css" rel="stylesheet">
+        <link href="bootstrap/bootstrap-grid.css" rel="stylesheet">
+        <link rel="stylesheet" href="ifkapifka_shop_stil.css">
+    </head>
+    <body>
+        <nav id="nav_div">
+            <div class="row" id="nav_row">
+                <div class="col-md-4 col-6" id="title_column">
+                    <a href="ifkapifka_home.html"><img id="logo_slika" src="images\logo-tekst_enhanced.png"></a>
+                </div>
+                <div class="col-md-8 col-6" id="nav_links_column">
+                    <nav id="page_nav">
+                        <a class="text_navlink first_link" href="ifkapifka_home.html">POČETNA</a>
+                        <a id="current_page" class="text_navlink" href="ifkapifka_shop.html">SHOP</a>
+                        <a class="text_navlink" href="ifkapifka_events.html">EVENTI</a>
+                        <a class="text_navlink" href="ifkapifka_kontakt.html">KONTAKT</a>
+                    </nav>
+                    <a><i class="fa-solid fa-magnifying-glass" id="search_icon"></i></a>
+                    <a><i class="fa-solid fa-user icon_navlink" id="user_icon"></i></a>
+                    <a><i class="fa-solid fa-cart-shopping icon_navlink" id="shop_icon"></i></a>
+                    <button id="menubutton" onclick="openMenu()"><i class="fa-solid fa-bars"></i></button>
+                </div>
+            </div>
+        </nav>
+
+        <main>
+            <div id="nav_main_spacing"></div>
+
+            <div id="products">
+                <div class="row" id="filters_row">
+                    <h2 id="filter_title">Promatrate sve kategorije</h2>
+                    <div id="filters_col" class="col-12">
+                        <button class="filter_button">KATEGORIJA <i class="fa-solid fa-angle-down question_icon"></i></button>
+                        <button class="filter_button">VRSTA <i class="fa-solid fa-angle-down question_icon"></i></button>
+                        <button class="filter_button">SERIJA <i class="fa-solid fa-angle-down question_icon"></i></button>
+                        <button class="filter_button">BOJA <i class="fa-solid fa-angle-down question_icon"></i></button>
+                    </div>
+                </div>
+                <div class="row product_row">
+                    <div id="product1" class="col-md-4 col-6 product_div product_left phone_left">
+                        <a href="ifkapifka_product.html" class="product_links">
+                        <div class="product_img" id="product_img1"></div>
+                        <div class="product_info">
+                            <p class="product_name">Luna šalica</p>
+                            <p class="product_price">€??</p>
+                        </div>
+                        </a>
+                        
+                    </div>
+                    <div id="product2" class="col-md-4 col-6 product_div product_left phone_right">
+                        <a href="ifkapifka_product.html" class="product_links">
+                        <div class="product_img" id="product_img2"></div>
+                        <div class="product_info">
+                            <p class="product_name">Monstera naušnice</p>
+                            <p class="product_price">€??</p>
+                        </div>
+                        </a>
+                    </div>
+                    <div id="product3" class="col-md-4 col-6 product_div product_right phone_left">
+                        <a href="ifkapifka_product.html" class="product_links">
+                        <div class="product_img" id="product_img3"></div>
+                        <div class="product_info">
+                            <p class="product_name">Luna zdjela</p>
+                            <p class="product_price">€??</p>
+                        </div>
+                        </a>
+                    </div>
+                    <div id="product4" class="col-md-4 col-6 product_div product_left phone_right">
+                        <a href="ifkapifka_product.html" class="product_links">
+                        <div class="product_img" id="product_img4"></div>
+                        <div class="product_info">
+                            <p class="product_name">Lunaria zdjelice</p>
+                            <p class="product_price">€??</p>
+                        </div>
+                        </a>
+                    </div>
+                    <div id="product5" class="col-md-4 col-6 product_div product_center phone_left">
+                        <a href="ifkapifka_product.html" class="product_links">
+                        <div class="product_img" id="product_img5"></div>
+                        <div class="product_info">
+                            <p class="product_name">Posuda za pohranu</p>
+                            <p class="product_price">€??</p>
+                        </div>
+                        </a>
+                    </div>
+                    <div id="product6" class="col-md-4 col-6 product_div product_right phone_right">
+                        <a href="ifkapifka_product.html" class="product_links">
+                        <div class="product_img" id="product_img6"></div>
+                        <div class="product_info">
+                            <p class="product_name">Lunaria tanjur</p>
+                            <p class="product_price">€??</p>
+                        </div>
+                        </a>
+                        
+                    </div>
+                    <div id="product7" class="col-md-4 col-6 product_div product_left phone_left">
+                        <a href="ifkapifka_product.html" class="product_links">
+                        <div class="product_img" id="product_img7"></div>
+                        <div class="product_info">
+                            <p class="product_name">Lunaria šalica</p>
+                            <p class="product_price">€??</p>
+                        </div>
+                        </a>
+                       
+                    </div>
+                    <div id="product8" class="col-md-4 col-6 product_div product_center phone_right">
+                        <a href="ifkapifka_product.html" class="product_links">
+                        <div class="product_img" id="product_img8"></div>
+                        <div class="product_info">
+                            <p class="product_name">Luna zdjela</p>
+                            <p class="product_price">€??</p>
+                        </div>
+                        </a>
+                        
+                    </div>
+                </div>
+            </div>
+
+            <div id="get_custom">
+                <div class="row" id="get_custom_row">
+                    <div class="col-12" id="get_custom_col">
+                        <h2 id="getc_title">Želite proizvod po narudžbi?</h2>
+                        <p id="getc_txt">Kontaktirajte nas putem obrasca, ili nam pošaljite poruku putem e-pošte 
+                        radi dogovora o narudžbi.</p>
+                        <a href="ifkapifka_kontakt.html"><button id="contact_btn">KONTAKT</button></a>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <div class="row" id="footer_nav_row">
+                <div class="col-12 col-md-8" id="footer_nav">
+                    <table id="footer_table">
+                        <tr>
+                            <td>HOME</td>
+                            <td>SHOP</td>
+                            <td>EVENTI</td>
+                            <td>KONTAKT</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>Vidi sve</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>Keramika</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>Nakit</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>Čudesni vrtovi</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </table>
+                </div>
+                <div id="logo_col" class="col-12 col-md-4">
+                    <img id="footer_logo_img" src="images/logo-bez.png">
+                </div>
+            </div>
+            <div class="row" id="social_media_row">
+                <div id="social_media" class="col-12">
+                    <i class="fa-brands fa-instagram footer_icons_social"></i>
+                    <i class="fa-brands fa-facebook footer_icons_social"></i>
+                </div>
+            </div>
+            <div class="row" id="terms_row">
+                <div id="terms_payment" class="col-12 col-md-4">
+                    <i class="fa-brands fa-cc-visa footer_icons_payment"></i>
+                    <i class="fa-brands fa-cc-mastercard footer_icons_payment"></i>
+                    <i class="fa-brands fa-paypal footer_icons_payment"></i>
+                </div>
+                <div id="terms" class="col-12 col-md-8">
+                    <a class="term_links">ODREDBE I UVJETI</a>
+                    <a class="term_links">POLITIKA O PRIVATNOSTI</a>
+                    <a class="term_links">KOLAČIĆI</a>
+                </div>
+            </div>
+          </footer>
+    </body>
+</html>

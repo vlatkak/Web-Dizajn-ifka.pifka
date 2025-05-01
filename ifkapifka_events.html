@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="ifka.pifka web shop">
+        <meta name="author" content="Vlatka Korbar">
+        <title>ifka.pifka - eventi</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="icon" type="image/x-icon" href="images/logo-zelena.png">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+        <link href="bootstrap/bootstrap-reboot.css" rel="stylesheet">
+        <link href="bootstrap/bootstrap-grid.css" rel="stylesheet">
+        <link rel="stylesheet" href="ifkapifka_events_stil.css">
+    </head>
+    <body>
+        <nav id="nav_div">
+            <div class="row" id="nav_row">
+                <div class="col-md-4 col-6" id="title_column">
+                    <a href="ifkapifka_home.html"><img id="logo_slika" src="images\logo-tekst_enhanced.png"></a>
+                </div>
+                <div class="col-md-8 col-6" id="nav_links_column">
+                    <nav id="page_nav">
+                        <a class="text_navlink first_link" href="ifkapifka_home.html">POČETNA</a>
+                        <a class="text_navlink" href="ifkapifka_shop.html">SHOP</a>
+                        <a id="current_page" class="text_navlink" href="ifkapifka_events.html">EVENTI</a>
+                        <a class="text_navlink" href="ifkapifka_kontakt.html">KONTAKT</a>
+                    </nav>
+                    <a><i class="fa-solid fa-magnifying-glass" id="search_icon"></i></a>
+                    <a><i class="fa-solid fa-user icon_navlink" id="user_icon"></i></a>
+                    <a><i class="fa-solid fa-cart-shopping icon_navlink" id="shop_icon"></i></a>
+                    <button id="menubutton" onclick="openMenu()"><i class="fa-solid fa-bars"></i></button>
+                </div>
+            </div>
+        </nav>
+
+        <main>
+            <div id="banner_div">
+                <div id="banner_row" class="row">
+                    <div class="col-12" id="banner_col">
+                        <h1>Vidite naše proizvode uživo</h1>
+                        <p>Otkrijte na kojim svim lokacija možete vidjeti, a možda i kupiti, naše proizvode.</p>
+                    </div>
+                </div> 
+            </div>
+
+            <div id="locations_div">
+                <div id="location1_row" class="row location_row">
+                    <div id="location1_txt" class=" col-12 col-lg-4 location_col">
+                        <div class="location_text">
+                            <h2>Mini show off</h2>
+                            <p>Naši su proizvod redovit gost u ovom zagrebačkom showroomu.</p>
+                        </div>
+                        <div class="location_info_table_div">
+                            <table class="location_table">
+                                <tr class="location_tr">
+                                    <td class="location_td1">ADRESA: Krvavi most 2, Zagreb</td>
+                                </tr>
+                                <tr class="location_tr">
+                                    <td>RADNO VRIJEME: Subotom, 11:00 - 14:00</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div id="location1_image" class="col-12 col-lg-8"></div>
+                </div>
+                <div id="location2_row" class="row location_row">
+                    <div id="location2_image" class="col-12 col-lg-4"></div>
+                    <div id="location2_txt" class="col-12 col-lg-8 location_col">
+                        <div class="location_text">
+                            <h2>Trogir Experience</h2>
+                            <p>U ovoj ćete suvenirnici pronaći širok asortiman ručno rađenih proizvoda, 
+                                a među njima i neke od naših.</p>
+                        </div>
+                        <div class="location_info_table_div">
+                            <table class="location_table">
+                                <tr class="location_tr">
+                                    <td class="location_td1">ADRESA: Budislavićeva ul. 14, Trogir</td>
+                                </tr>
+                                <tr class="location_tr">
+                                    <td>RADNO VRIJEME: privremeno zatvoreno</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="upcoming_events">
+                <h2>Nadolazeći događaji</h2>
+                <div class="row upcoming_row">
+                    <div class="col-12 col-lg-8 upcoming_info_col">
+                        <div class="date_div">
+                            <div class="month_txt">
+                                <span>O</span><span>Ž</span><span>U</span>
+                            </div>
+                            <p class="day_txt">16</p>
+                        </div>
+                        <div class="upcoming_info_txt">
+                            <h3>HUSH HUSH market</h3>
+                            <p class="upcoming_info_p">Muzej Suvremene Umjetnosti, Avenija Dubrovnik 17, Zagreb</p>
+                            <p class="upcoming_info_p">Subota, 16.3.2025., 11:00 - 19:00</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4" id="upcoming_image1">
+                        <div class="upcoming_img_col"></div>
+                    </div>
+                </div>
+                <div class="row upcoming_row">
+                    <div class="col-12 col-lg-8 upcoming_info_col">
+                        <div class="date_div">
+                            <div class="month_txt">
+                                <span>T</span><span>R</span><span>A</span>
+                            </div>
+                            <p class="day_txt">20</p>
+                        </div>
+                        <div class="upcoming_info_txt">
+                            <h3>Projekt Ilica: Q'ART</h3>
+                            <p class="upcoming_info_p">Ilica, Zagrb</p>
+                            <p class="upcoming_info_p">Nedjelja, 20.4.2025., 09:00 - 15:30</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4" id="upcoming_image2">
+                        <div class="upcoming_img_col"></div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <div class="row" id="footer_nav_row">
+                <div class="col-12 col-md-8" id="footer_nav">
+                    <table id="footer_table">
+                        <tr>
+                            <td>HOME</td>
+                            <td>SHOP</td>
+                            <td>EVENTI</td>
+                            <td>KONTAKT</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>Vidi sve</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>Keramika</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>Nakit</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>Čudesni vrtovi</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </table>
+                </div>
+                <div id="logo_col" class="col-12 col-md-4">
+                    <img id="footer_logo_img" src="images/logo-bez.png">
+                </div>
+            </div>
+            <div class="row" id="social_media_row">
+                <div id="social_media" class="col-12">
+                    <i class="fa-brands fa-instagram footer_icons_social"></i>
+                    <i class="fa-brands fa-facebook footer_icons_social"></i>
+                </div>
+            </div>
+            <div class="row" id="terms_row">
+                <div id="terms_payment" class="col-12 col-md-4">
+                    <i class="fa-brands fa-cc-visa footer_icons_payment"></i>
+                    <i class="fa-brands fa-cc-mastercard footer_icons_payment"></i>
+                    <i class="fa-brands fa-paypal footer_icons_payment"></i>
+                </div>
+                <div id="terms" class="col-12 col-md-8">
+                    <a class="term_links">ODREDBE I UVJETI</a>
+                    <a class="term_links">POLITIKA O PRIVATNOSTI</a>
+                    <a class="term_links">KOLAČIĆI</a>
+                </div>
+            </div>
+          </footer>
+    </body>
+</html>

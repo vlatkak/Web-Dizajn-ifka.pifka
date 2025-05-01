@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="ifka.pifka web shop">
+        <meta name="author" content="Vlatka Korbar">
+        <title>ifka.pifka - kontakt</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="icon" type="image/x-icon" href="images/logo-zelena.png">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+        <link href="bootstrap/bootstrap-reboot.css" rel="stylesheet">
+        <link href="bootstrap/bootstrap-grid.css" rel="stylesheet">
+        <link rel="stylesheet" href="ifkapifka_kontakt_stil.css">
+    </head>
+    <body>
+        <nav id="nav_div">
+            <div class="row" id="nav_row">
+                <div class="col-md-4 col-6" id="title_column">
+                    <a href="ifkapifka_home.html"><img id="logo_slika" src="images\logo-tekst_enhanced.png"></a>
+                </div>
+                <div class="col-md-8 col-6" id="nav_links_column">
+                    <nav id="page_nav">
+                        <a class="text_navlink first_link" href="ifkapifka_home.html">POČETNA</a>
+                        <a class="text_navlink" href="ifkapifka_shop.html">SHOP</a>
+                        <a class="text_navlink" href="ifkapifka_events.html">EVENTI</a>
+                        <a id="current_page" class="text_navlink" href="ifkapifka_kontakt.html">KONTAKT</a>
+                    </nav>
+                    <a><i class="fa-solid fa-magnifying-glass" id="search_icon"></i></a>
+                    <a><i class="fa-solid fa-user icon_navlink" id="user_icon"></i></a>
+                    <a><i class="fa-solid fa-cart-shopping icon_navlink" id="shop_icon"></i></a>
+                    <button id="menubutton" onclick="openMenu()"><i class="fa-solid fa-bars"></i></button>
+                </div>
+            </div>
+        </nav>
+
+        <main>
+            <div id="banner">
+                <div id="banner_row" class="row">
+                    <div id="banner_col" class="col-12">
+                        <h1>Ne morate biti sramežljivi</h1>
+                        <table id="contact_info_table">
+                            <tr id="contact_table_row">
+                                <td class="contact_info_column">
+                                    <i class="fa-solid fa-envelope contact_icons"></i> iffka.piffka@gmail.com
+                                </td>
+                                <td class="contact_info_column" id="middle_column">
+                                    <i class="fa-brands fa-instagram contact_icons"></i> @pifkaifka
+                                </td>
+                                <td class="contact_info_column">
+                                    <i class="fa-brands fa-facebook contact_icons"></i> @Ifka.pifka
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <div id="form_div">
+                <div id="form_row" class="row">
+                    <div id="form_col" class="col-12 col-lg-8">
+                        <h2>Pošaljite nam poruku</h2>
+                        <p id="form_p">Kontaktirajte nas brzo i bezbolno. Vaši podaci neće biti podijeljeni ni sa kime.</p>
+                        <input class="txt_input" type="text" placeholder="Vaše ime">
+                        <label class="text_label">Ime i prezime*</label>
+                        <input class="txt_input"  type="text" placeholder="vaša.adresa@email.com">
+                        <label class="text_label">Email*</label>
+                        <input class="txt_input"  type="text" placeholder="Tema vaše poruke">
+                        <label class="text_label">Predmet</label>
+                        <label id="txtarea_label" class="text_label">Vaša poruka:</label>
+                        <textarea rows="5"></textarea>
+                        <div id="button_div"><button id="send_button">POŠALJI</button></div>
+                    </div>
+                    <div id="image_col" class="col-lg-4"></div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <div class="row" id="footer_nav_row">
+                <div class="col-12 col-md-8" id="footer_nav">
+                    <table id="footer_table">
+                        <tr>
+                            <td>HOME</td>
+                            <td>SHOP</td>
+                            <td>EVENTI</td>
+                            <td>KONTAKT</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>Vidi sve</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>Keramika</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>Nakit</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>Čudesni vrtovi</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </table>
+                </div>
+                <div id="logo_col" class="col-12 col-md-4">
+                    <img id="footer_logo_img" src="images/logo-bez.png">
+                </div>
+            </div>
+            <div class="row" id="social_media_row">
+                <div id="social_media" class="col-12">
+                    <i class="fa-brands fa-instagram footer_icons_social"></i>
+                    <i class="fa-brands fa-facebook footer_icons_social"></i>
+                </div>
+            </div>
+            <div class="row" id="terms_row">
+                <div id="terms_payment" class="col-12 col-md-4">
+                    <i class="fa-brands fa-cc-visa footer_icons_payment"></i>
+                    <i class="fa-brands fa-cc-mastercard footer_icons_payment"></i>
+                    <i class="fa-brands fa-paypal footer_icons_payment"></i>
+                </div>
+                <div id="terms" class="col-12 col-md-8">
+                    <a class="term_links">ODREDBE I UVJETI</a>
+                    <a class="term_links">POLITIKA O PRIVATNOSTI</a>
+                    <a class="term_links">KOLAČIĆI</a>
+                </div>
+            </div>
+          </footer>
+    </body>
+</html>

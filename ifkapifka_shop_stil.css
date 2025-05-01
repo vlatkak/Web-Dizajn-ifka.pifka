@@ -1,0 +1,635 @@
+div{
+   /*border: 1px solid red;*/
+}
+
+body{
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: #f7f3ed;
+    font-family: Verdana;
+}
+
+button{
+    background-color: #265B31;
+    color: #f7f3ed;
+    white-space: nowrap;
+    height: min-content;
+    width: min-content;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    padding-left: 1em;
+    padding-right: 1em;
+    border: 0px;
+    border-radius: 360px;
+    transition: background-color 0.5s;
+}
+button:hover{
+    background-color: rgb(38, 91, 49, 0.5);
+    color: #f7f3ed;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    padding-left: 1em;
+    padding-right: 1em;
+    border-radius: 360px;
+}
+button:focus{
+    background-color: #265B31;
+    color: #f7f3ed;
+    white-space: nowrap;
+    height: min-content;
+    width: min-content;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    padding-left: 1em;
+    padding-right: 1em;
+    border: 0px;
+    border-radius: 360px;
+    transition: none;
+}
+
+#nav_div{
+    padding-left: 120px;
+    padding-right: 120px;
+    margin: 0px;
+    background-color: #265B31;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+#nav_row{
+    margin: 0px;
+    padding: 0px;
+}
+#title_column{
+    padding: 0px;
+}
+#logo_slika{
+    height: 3em;
+    margin-top: 0.2em;
+    margin-left: 0px;
+}
+#nav_links_column{
+    display: flex;
+    flex-direction: row;
+    color: #E7DCCA;
+    justify-content: right;
+    align-items: center;
+    padding: 0px;
+}
+.text_navlink{
+    margin-left: 1em;
+    margin-right: 1em;
+    font-size: 14px;
+    color: #E7DCCA;
+    transition: color 0.5s;
+}
+.text_navlink:hover{
+    margin-left: 1em;
+    margin-right: 1em;
+    font-size: 14px;
+    color: white;
+    text-decoration: none;
+}
+.first_link{
+    margin-left: 0px;
+}
+.icon_navlink{
+    margin-left: 2em;
+    color: #E7DCCA;
+    transition: color 0.5s;
+}
+.icon_navlink:hover{
+    margin-left: 2em;
+    color: white;
+}
+#search_icon{
+    margin-left: 1em;
+    color: #E7DCCA;
+    transition: color 0.5s;
+}
+#search_icon:hover{
+    color: white;
+}
+#current_page{
+    border-bottom: #E7DCCA 2px solid;
+    color: #E7DCCA;
+    transition: border-bottom 0.5s, color 0.5s;
+}
+#current_page:hover{
+    color: white;
+    border-bottom: white 2px solid;
+}
+i{
+    font-size: 0.8em;
+}
+#menubutton{
+    display: none;
+}
+
+main{
+    margin-left: 0px;
+    margin-right: 0px;
+    padding: 0px;
+    height: 100%;
+}
+#nav_main_spacing{
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    height: 30px;
+    background-color: #f9f3e8;
+}
+
+#products{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding-left: 120px;
+    padding-right: 120px;
+}
+#filters_row{
+    margin: 0px;
+    padding: 0px;
+    margin-bottom: 30px;
+    background-color: #f9f3e8;
+}
+#filters_col{
+    padding: 0px;
+    margin: 0px;
+    margin-top: 0.5em;
+    font-size: 14px;
+    margin-bottom: 0.5em;
+    background-color: #f9f3e8;
+    border-bottom: black solid 1px;
+}
+#filter_title{
+    font-family: Georgia;
+    color: #265B31;
+    font-size: 3em;
+    line-height: 1em;
+    padding-top: 0.5em;
+}
+.filter_button{
+    border: 0px;
+    padding: 0px;
+    margin: 0px;
+    margin-right: 20px;
+    background-color: #f9f3e8;
+    font-size: 14px;
+    color: black;
+}
+.filter_button:hover{
+    border: 0px;
+    padding: 0px;
+    margin: 0px;
+    margin-right: 20px;
+    background-color: #f9f3e8;
+    font-size: 14px;
+    color: #265B31;
+}
+.filter_button:focus{
+    border: 0px;
+    padding: 0px;
+    margin: 0px;
+}
+.product_links{
+    color: black;
+    text-decoration: none;
+}
+.product_links:hover{
+    color: black;
+    text-decoration: none;
+}
+.product_row{
+    margin: 0px;
+    padding: 0px;
+}
+.product_img{
+    background-size: cover;
+    width: 100%;
+    aspect-ratio: 1/1;
+    margin: 0px;
+    margin-bottom: 0.5em;
+}
+#product_img1{
+    background-image: url("images/light_mugs.jpg");
+}
+#product_img2{
+    background-image: url("images/jewelery.jpg");
+}
+#product_img3{
+    background-image: url("images/blue_bowl.jpg");
+}
+#product_img4{
+    background-image: url("images/little_bowls.jpg");
+}
+#product_img5{
+    background-image: url("images/pot_lid.jpg");
+}
+#product_img6{
+    background-image: url("images/brown_plate.jpg");
+}
+#product_img7{
+    background-image: url("images/dark_mugs.jpg");
+}
+#product_img8{
+    background-image: url("images/bowl_spoon.jpg");
+}
+.product_info{
+    display: flex;
+    flex-direction: row;
+    padding: 0px;
+    margin: 0px;
+    font-size: 18px;
+}
+.product_name{
+    width: 70%;
+    margin-bottom: 0.2em;
+}
+.product_price{
+    width: 30%;
+    text-align: right;
+    margin-bottom: 0.2em;
+}
+.product_div{
+    margin: 0px;
+    padding: 0px;
+}
+.product_left{
+    padding-right: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.product_center{
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.product_right{
+    padding-left: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#get_custom{
+    width: 100%;
+    margin: 0px;
+    margin-bottom: 60px;
+    margin-top: 120px;
+    padding-left: 120px;
+    padding-right: 120px;
+}
+#get_custom_row{
+    margin: 0px;
+    padding: 0px;
+    height: 260px;
+    background-image: url("images/babies_breath.jpg");
+    background-size: cover;
+}
+#get_custom_col{
+    background-image: linear-gradient(to bottom, rgb(247, 243, 237, 1), rgb(247, 243, 237, 0));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#getc_title{
+    font-family: Georgia;
+    font-size: 3em;
+    color: #265B31;
+    line-height: 1.2em;
+}#getc_txt{
+    font: 16px;
+}
+
+
+footer{
+    margin: 0px;
+    padding-left: 120px;
+    padding-right: 120px;
+    background-color: #265B31;
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+#footer_nav_row{
+    margin: 0px;
+    padding: 0px;
+    height: 120px;
+}
+#logo_col{
+    display: flex;
+    align-items: first baseline;
+    justify-content: right;
+    padding: 0px;
+    height: 100%;
+}
+#footer_logo_img{
+    height: 100%;
+    margin-right: -15px;
+    margin-top: -10px;
+}
+#footer_nav{
+    color: #E7DCCA;
+    padding: 0px;
+    font-size: 14px;
+}
+#footer_table{
+    height: 100%;
+}
+td{
+    padding-right: 20px;
+}
+#social_media_row{
+    padding: 0px;
+    margin: 0px;
+}
+#social_media{
+    color: #E7DCCA;
+    display: flex;
+    justify-content: right;
+    font-size: 14px;
+    padding: 0px;
+    margin-top: 0.6em;
+    margin-bottom: 0.6em;
+}
+#terms_row{
+    color: #E7DCCA;
+    padding: 0px;
+    margin: 0px;
+}
+.footer_icons_social{
+    font-size: 1.2em;
+    padding-left: 0.6em;
+}
+.footer_icons_payment{
+    font-size: 1.2em;
+    padding-right: 0.6em;
+}
+#terms_payment{
+    padding: 0px;
+}
+#terms{
+    display: flex;
+    justify-content: right;
+    padding: 0px;
+}
+.term_links{
+    padding-left: 20px;
+    font-size: 14px
+}
+
+@media (max-width: 768px) {
+    #nav_div{
+        padding-left: 10px;
+        padding-right: 10px;
+        margin: 0px;
+        background-color: #265B31;
+        padding-top: 0.5em;
+        padding-bottom: 0.5em;
+    }
+    .text_navlink{
+        display: none;
+    }
+    .icon_navlink{
+        display: none;
+    }
+    #search_icon{
+        display: none;
+    }
+    #menubutton{
+        color: #E7DCCA;
+        display: inline;
+        background-color: #265B31;
+        border: 0px;
+        font-size: 1.5em;
+        margin: 0px;
+        padding: 0px;
+    }
+    #title_column{
+        padding: 0px;
+        display: flex;
+        align-items: center;
+    }
+    #logo_slika{
+        height: 3em;
+        margin-top: 0.2em;
+        margin-left: 0px;
+    }
+
+    h2{
+        font-size: 2.5em;
+    }
+    #products{
+        width: 100%;
+        height: 100%;
+        margin: 0px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .product_left{
+        padding-right: 0px;
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+    .product_center{
+        padding-right: 0px;
+        padding-left: 0px;
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+    .product_right{
+        padding-left: 0px;
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+    .phone_left{
+        padding-right: 15px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .phone_right{
+        padding-left: 15px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    #get_custom{
+        width: 100%;
+        margin: 0px;
+        margin-bottom: 90px;
+        margin-top: 60px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #get_custom_row{
+        margin: 0px;
+        padding: 0px;
+        height: 360px;
+        background-image: url("images/babies_breath.jpg");
+        background-size: 150%;
+    }
+    #get_custom_col{
+        background-image: linear-gradient(to bottom, rgb(247, 243, 237, 1), rgb(247, 243, 237, 0));
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    footer{
+        margin: 0px;
+        padding-left: 10px;
+        padding-right: 10px;
+        background-color: #265B31;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    #footer_nav_row{
+        margin: 0px;
+        padding: 0px;
+        height: auto;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    #logo_col{
+        display: flex;
+        justify-content: left;
+        padding: 0px;
+        height: 120px;
+        padding-bottom: 20px;
+    }
+    #footer_logo_img{
+        height: 120px;
+        margin-right: 0px;
+        margin-top: 0px;
+        margin-left: -5px;
+    }
+    #terms_payment{
+        padding: 0px;
+        padding-bottom: 1em;
+        display: flex;
+        flex-direction: row;
+        justify-content: right;
+    }
+    #social_media{
+        color: #E7DCCA;
+        display: flex;
+        justify-content: right;
+        font-size: 14px;
+        padding: 0px;
+        margin-bottom: 1em;
+    }
+    .footer_icons_payment{
+        font-size: 1.2em;
+        padding-left: 0.6em;
+        padding-right: 0px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+    #nav_div{
+        padding-left: 20px;
+        padding-right: 20px;
+        margin: 0px;
+        background-color: #265B31;
+        padding-top: 0.5em;
+        padding-bottom: 0.5em;
+    }
+
+    h2{
+        font-size: 2.5em;
+    }
+    #products{
+        width: 100%;
+        height: 100%;
+        margin: 0px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .product_left{
+        padding-right: 20px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .product_center{
+        padding-right: 10px;
+        padding-left: 10px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .product_right{
+        padding-left: 20px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    #get_custom{
+        width: 100%;
+        margin: 0px;
+        margin-bottom: 90px;
+        margin-top: 60px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    footer{
+        margin: 0px;
+        padding-left: 20px;
+        padding-right: 20px;
+        background-color: #265B31;
+        padding-top: 40px;
+        padding-bottom: 20px;
+    }
+    #footer_logo_img{
+        height: 100%;
+        margin-right: -10px;
+        margin-top: -5px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1192px) {
+    #nav_div{
+        padding-left: 60px;
+        padding-right: 60px;
+        margin: 0px;
+        background-color: #265B31;
+        padding-top: 0.5em;
+        padding-bottom: 0.5em;
+    }
+    h2{
+        font-size: 2.5em;
+    }
+    #products{
+        width: 100%;
+        height: 100%;
+        margin: 0px;
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+
+    #get_custom{
+        width: 100%;
+        margin: 0px;
+        margin-bottom: 90px;
+        margin-top: 60px;
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+
+    footer{
+        margin: 0px;
+        padding-left: 60px;
+        padding-right: 60px;
+        background-color: #265B31;
+        padding-top: 40px;
+        padding-bottom: 20px;
+    }
+    #footer_logo_img{
+        height: 100%;
+        margin-right: -10px;
+        margin-top: -5px;
+    }
+}
